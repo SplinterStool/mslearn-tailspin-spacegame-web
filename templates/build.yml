@@ -1,7 +1,7 @@
 parameters:
   buildConfiguration: 'Release'
 
-- script: |
+- script:
     echo "##vso[task.setvariable variable=releaseTag]$(Build.BuildNumber)_$(date +%Y%m%d_%H%M%S)"
   displayName: 'Generate release tag'
 
